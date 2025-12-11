@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Moon, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube, Moon, ArrowRight } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -22,20 +22,20 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="text-olive-200/80 leading-relaxed text-sm font-light">
-              Your trusted partner for a sincere and comfortable spiritual journey. We facilitate Umrah and Hajj with integrity, honouring the guests of Allah with the highest standard of service.
+              Rakan kongsi anda yang dipercayai untuk perjalanan rohani yang ikhlas dan selesa. Kami memudahkan umrah dan haji dengan penuh integriti, memuliakan tetamu Allah dengan standard perkhidmatan yang tertinggi.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-gold-500 font-serif font-semibold text-lg mb-6 tracking-wide">Discover</h3>
+            <h3 className="text-gold-500 font-serif font-semibold text-lg mb-6 tracking-wide">Terokai</h3>
             <ul className="space-y-3 text-sm">
               {[
-                { name: 'Our Story', path: '#about' },
-                { name: 'Umrah Packages', path: '#packages' },
-                { name: 'Journey Process', path: '#process' },
-                { name: 'Pilgrim Gallery', path: '#gallery' },
-                { name: 'Contact Us', path: '#contact' }
+                { name: 'Tentang Kami', path: '#about' },
+                { name: 'Pakej', path: '#packages' },
+                { name: 'Proses Perjalanan', path: '#process' },
+                { name: 'Galeri', path: '#gallery' },
+                { name: 'Hubungi Kami', path: '#contact' }
               ].map(link => (
                 <li key={link.name}>
                   <a href={link.path} className="text-olive-100 hover:text-gold-400 transition-colors flex items-center gap-2 group">
@@ -49,11 +49,11 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-gold-500 font-serif font-semibold text-lg mb-6 tracking-wide">Visit Us</h3>
+            <h3 className="text-gold-500 font-serif font-semibold text-lg mb-6 tracking-wide">Lawati Kami</h3>
             <ul className="space-y-5 text-sm font-light">
               <li className="flex items-start gap-4">
                 <MapPin className="w-5 h-5 text-gold-500 shrink-0 mt-0.5 opacity-80" />
-                <span className="leading-relaxed">123 Pilgrim Street,<br />Kuala Lumpur, 50450<br />Malaysia</span>
+                <span className="leading-relaxed">A8, (Tingkat Atas) Jalan Semeling Maju 1,<br />Taman Semeling Setia,<br />08100 Bedong<br />Kedah Darul Aman, Malaysia</span>
               </li>
               <li className="flex items-center gap-4">
                 <Phone className="w-5 h-5 text-gold-500 shrink-0 opacity-80" />
@@ -68,23 +68,18 @@ const Footer: React.FC = () => {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-gold-500 font-serif font-semibold text-lg mb-6 tracking-wide">Stay Connected</h3>
+            <h3 className="text-gold-500 font-serif font-semibold text-lg mb-6 tracking-wide">Sentiasa Berhubung</h3>
             <p className="text-xs text-olive-200/70 mb-5 leading-relaxed">
-              Join our community for spiritual reminders and updates on upcoming group departures.
+              Sertai komuniti kami untuk peringatan rohani dan kemas kini tentang perlepasan kumpulan yang akan datang.
             </p>
-            <form className="space-y-3" onSubmit={(e) => e.preventDefault()}>
-              <div className="relative">
-                <input
-                  type="email"
-                  placeholder="Email address"
-                  className="w-full px-4 py-3 bg-olive-950/50 border border-olive-700 focus:border-gold-500 outline-none text-white text-sm placeholder-olive-500 transition-colors rounded-full"
-                />
-                <button className="absolute right-1 top-1 bottom-1 px-3 bg-gold-600 hover:bg-gold-500 text-white transition-colors rounded-full flex items-center justify-center w-10">
-                  <ArrowRight size={16} />
-                </button>
-              </div>
-            </form>
+            <div className="flex gap-6">
+              <a href="#" className="text-olive-400 hover:text-gold-500 transition-colors"><Facebook size={18} /></a>
+              <a href="#" className="text-olive-400 hover:text-gold-500 transition-colors"><Instagram size={18} /></a>
+              <a href="#" className="text-olive-400 hover:text-gold-500 transition-colors"><Twitter size={18} /></a>
+              <a href="#" className="text-olive-400 hover:text-gold-500 transition-colors"><Youtube size={18} /></a>
+            </div>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
@@ -92,10 +87,6 @@ const Footer: React.FC = () => {
           <p className="text-xs text-olive-400 font-light tracking-wide text-center md:text-left">
             &copy; {new Date().getFullYear()} Hijrah al Haramain HQ. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <a href="#" className="text-olive-400 hover:text-gold-500 transition-colors"><Facebook size={18} /></a>
-            <a href="#" className="text-olive-400 hover:text-gold-500 transition-colors"><Instagram size={18} /></a>
-          </div>
         </div>
       </div>
     </footer>

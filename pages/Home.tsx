@@ -65,15 +65,14 @@ const Home: React.FC = () => {
             {/* Left Side: Text Content */}
             <div className="text-center lg:text-left space-y-8 animate-fade-in-up pt-20 lg:pt-0">
               <span className="inline-block py-1.5 px-4 border border-white/20 rounded-full bg-black/20 backdrop-blur-sm text-sand-100 text-xs tracking-[0.2em] uppercase font-bold mb-4">
-                The Journey of a Lifetime
+                Perjalanan Sepanjang Hayat
               </span>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-medium text-white leading-tight mb-8 text-shadow-lg">
-                Perform Umrah with <br />
-                <span className="text-gold-400 italic">Sincerity</span> & <span className="text-gold-400 italic">Comfort</span>
+                Tunaikan Umrah dengan <br />
+                <span className="text-gold-400 italic">Ikhlas</span> & <span className="text-gold-400 italic">Selesa</span>
               </h1>
               <p className="text-lg md:text-xl text-sand-100 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed mb-12 opacity-90">
-                We guide you through every step of your spiritual journey to the Holy Cities, ensuring peace of mind so you can focus on your worship.
-              </p>
+                Kami membimbing anda pada setiap langkah perjalanan rohani menuju Tanah Suci, memastikan ketenangan jiwa agar anda dapat fokus sepenuhnya pada ibadah.              </p>
 
               <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
                 <a
@@ -155,28 +154,28 @@ const Home: React.FC = () => {
 
             {/* Content Side */}
             <div className="md:w-1/2">
-              <span className="text-gold-600 font-bold tracking-widest text-xs uppercase mb-4 block">Why Choose Hijrah al Haramain</span>
-              <h2 className="text-4xl md:text-5xl font-serif font-medium text-olive-900 mb-10 leading-tight">Honouring the Guests <br />of Allah</h2>
-              <p className="text-slate-600 leading-relaxed mb-12 font-light text-lg">
-                We believe that your pilgrimage should be free from worldly worries. Our mission is to facilitate a journey that is not only logistically seamless but spiritually uplifting.
+              <span className="text-gold-600 font-bold tracking-widest text-xl uppercase mb-4 block">Mengapa Memilih Hijrah al Haramain</span>
+              <h2 className="text-4xl md:text-5xl font-serif font-medium text-olive-900 mb-10 leading-tight">Memuliakan Tetamu<br />Allah</h2>
+              <p className="text-slate-600 leading-relaxed mb-12 font-bold text-lg">
+                Kami percaya bahawa perjalanan ibadah anda harus bebas daripada kebimbangan duniawi. Misi kami adalah untuk memudahkan sebuah perjalanan yang bukan sahaja lancar dari segi logistik, tetapi juga mengangkat jiwa secara rohani.
               </p>
 
               <div className="space-y-10">
                 {[
                   {
                     icon: <Shield className="w-6 h-6 text-gold-600" />,
-                    title: "Amanah (Trust)",
-                    desc: "Transparent pricing with no hidden fees. We deliver what we promise."
+                    title: "Amanah (Kepercayaan)",
+                    desc: "Harga yang telus tanpa caj tersembunyi. Kami menunaikan apa yang kami janjikan"
                   },
                   {
                     icon: <Heart className="w-6 h-6 text-gold-600" />,
-                    title: "Personal Care",
-                    desc: "Dedicated Mutawwifs who treat you like family throughout the journey."
+                    title: "Layanan Mesra",
+                    desc: "Mutawwif berdedikasi yang melayani anda seperti keluarga sepanjang perjalanan."
                   },
                   {
                     icon: <Star className="w-6 h-6 text-gold-600" />,
-                    title: "Halal & Shariah Compliant",
-                    desc: "Ensuring every aspect of your trip adheres to Islamic principles."
+                    title: "Halal & Patuh Syariah",
+                    desc: "Memastikan setiap aspek perjalanan anda mematuhi prinsip-prinsip Islam."
                   }
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-6 group">

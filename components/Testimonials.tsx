@@ -11,7 +11,7 @@ const Testimonials: React.FC = () => {
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
                 <Star className="w-8 h-8 text-gold-500 mx-auto mb-8" fill="currentColor" />
                 <h2 className="text-3xl md:text-5xl font-serif mb-12 leading-tight italic">
-                    "Alhamdulillah, the guidance provided by the Mutawwif was exceptional. My heart felt at ease throughout the entire journey."
+                    "Alhamdulillah, tunjuk ajar yang diberikan oleh Mutawwif sangat luar biasa. Hati saya rasa tenang sepanjang perjalanan."
                 </h2>
 
                 <div className="flex flex-col items-center">

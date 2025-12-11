@@ -1,27 +1,25 @@
 import React from 'react';
-import SectionPattern from '../components/SectionPattern';
 
 const Gallery: React.FC = () => {
   const images = [
-    { src: "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?q=80&w=2070&auto=format&fit=crop", caption: "Kaabah, Makkah" },
-    { src: "https://images.unsplash.com/photo-1565552629477-cd2c2bf3b63e?q=80&w=2074&auto=format&fit=crop", caption: "Masjid Nabawi" },
+    { src: "https://images.unsplash.com/photo-1647177156544-0d51fb7c900c?q=80&w=2072&auto=format&fit=crop", caption: "Kaabah, Makkah" },
+    { src: "https://images.unsplash.com/photo-1667456416191-43ba057635c1?q=80&w=2072&auto=format&fit=crop", caption: "Masjid Nabawi" },
     { src: "https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=2070&auto=format&fit=crop", caption: "Madinah Courtyard" },
-    { src: "https://images.unsplash.com/photo-1564121211835-e88c852648ab?q=80&w=2070&auto=format&fit=crop", caption: "Details of Light" },
-    { src: "https://images.unsplash.com/photo-1585698522307-e5088eb7e614?q=80&w=2072&auto=format&fit=crop", caption: "Quran Recitation" },
-    { src: "https://images.unsplash.com/photo-1647895058693-85cb96041e2f?q=80&w=2070&auto=format&fit=crop", caption: "Pilgrim Groups" }
+    { src: "https://images.unsplash.com/photo-1674066253665-4d2553a3bcb8?q=80&w=2072&auto=format&fit=crop", caption: "Kurma" },
+    { src: "https://images.unsplash.com/photo-1653985742057-683cc396bfe2?q=80&w=2072&auto=format&fit=crop", caption: "Melawat Unta" },
+    { src: "https://images.unsplash.com/photo-1584186028062-637e3e77318d?q=80&w=2072&auto=format&fit=crop", caption: "Zam zam" },
+    { src: "https://images.unsplash.com/photo-1674313505558-206662f3de03?q=80&w=2072&auto=format&fit=crop", caption: "Jabal Nur" },
   ];
 
   return (
     <div className="pt-32 pb-24 min-h-screen bg-white relative">
-      {/* Corner Patterns */}
-      <SectionPattern />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-20 relative">
-          <span className="text-gold-600 font-bold tracking-widest text-xs uppercase mb-3 block">Our Portfolio</span>
-          <h1 className="text-4xl md:text-5xl font-serif text-olive-900 mb-6">Moments of Tranquility</h1>
+          <span className="text-gold-600 font-bold tracking-widest text-xl uppercase mb-3 block">Portfolio Kami</span>
+          <h1 className="text-4xl md:text-5xl font-serif text-olive-900 mb-6">Momen Ketenangan Jiwa</h1>
           <p className="text-slate-600 text-lg font-light">
-            Glimpses from previous journeys. We are honored to have witnessed these beautiful spiritual moments with our pilgrims.
+            Sekilas perjalanan yang lalu. Kami berbesar hati dapat menyaksikan momen-momen rohani yang indah bersama para jemaah kami.
           </p>
         </div>
 

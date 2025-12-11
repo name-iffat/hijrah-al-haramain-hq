@@ -48,19 +48,19 @@ const Navbar: React.FC = () => {
   };
 
   const navLinks = [
-    { name: 'Home', path: '#home' },
-    { name: 'Packages', path: '#packages' },
-    { name: 'Process', path: '#process' },
-    { name: 'Gallery', path: '#gallery' },
-    { name: 'About', path: '#about' },
-    { name: 'Contact', path: '#contact' },
+    { name: 'Halaman Utama', path: '#home' },
+    { name: 'Pakej', path: '#packages' },
+    { name: 'Proses', path: '#process' },
+    { name: 'Galeri', path: '#gallery' },
+    { name: 'Tentang Kami', path: '#about' },
+    { name: 'Hubungi', path: '#contact' },
   ];
 
   return (
     <nav
       className={`fixed w-full z-40 transition-all duration-500 border-b ${isScrolled
-          ? 'shadow-sm border-olive-100 py-3'
-          : 'bg-transparent border-transparent py-6'
+        ? 'shadow-sm border-olive-100 py-3'
+        : 'bg-transparent border-transparent py-6'
         }`}
     >
       {/* Background Layer with Pattern - Visible on Scroll */}
@@ -77,8 +77,8 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-3 group">
             <div className={`p-2 rounded-full border transition-all duration-300 ${isScrolled
-                ? 'border-gold-500 text-gold-600'
-                : 'border-white/30 text-white bg-black/10 backdrop-blur-sm'
+              ? 'border-gold-500 text-gold-600'
+              : 'border-white/30 text-white bg-black/10 backdrop-blur-sm'
               }`}>
               <Moon className="w-5 h-5" fill="currentColor" />
             </div>
@@ -102,8 +102,8 @@ const Navbar: React.FC = () => {
                 href={link.path}
                 onClick={(e) => handleNavClick(e, link.path)}
                 className={`text-sm tracking-wide transition-all duration-300 relative group py-2 ${activeSection === link.path.substring(1)
-                    ? isScrolled ? 'text-gold-600 font-medium' : 'text-gold-400 font-medium'
-                    : isScrolled ? 'text-olive-800 hover:text-gold-600' : 'text-white hover:text-gold-300 text-shadow'
+                  ? isScrolled ? 'text-gold-600 font-medium' : 'text-gold-400 font-medium'
+                  : isScrolled ? 'text-olive-800 hover:text-gold-600' : 'text-white hover:text-gold-300 text-shadow'
                   }`}
               >
                 {link.name}
@@ -115,11 +115,11 @@ const Navbar: React.FC = () => {
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
               className={`px-6 py-2.5 rounded-full text-sm font-bold tracking-wide transition-all duration-300 border ${isScrolled
-                  ? 'bg-olive-800 text-white border-olive-800 hover:bg-olive-900 shadow-md'
-                  : 'bg-gold-500 text-white border-gold-500 hover:bg-white hover:text-gold-600 shadow-lg'
+                ? 'bg-olive-800 text-white border-olive-800 hover:bg-olive-900 shadow-md'
+                : 'bg-gold-500 text-white border-gold-500 hover:bg-white hover:text-gold-600 shadow-lg'
                 }`}
             >
-              Get Quote
+              Borang
             </a>
           </div>
 

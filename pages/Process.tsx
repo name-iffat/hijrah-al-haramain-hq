@@ -7,33 +7,33 @@ const Process: React.FC = () => {
     {
       icon: <MessageCircle className="w-8 h-8 text-white" />,
       number: "1",
-      title: "Initial Consultation & Guidance",
-      desc: "Reach out to our knowledgeable team. We'll understand your needs, dates, and preferences to recommend the best spiritual path."
+      title: "Konsultasi & Panduan Awal",
+      desc: "Hubungi pasukan kami yang berpengalaman. Kami akan memahami keperluan, tarikh, dan pilihan anda untuk mencadangkan perjalanan ibadah yang paling sesuai."
     },
     {
       icon: <Plane className="w-8 h-8 text-white" />,
       number: "2",
-      title: "Secure Your Sacred Journey",
-      desc: "Select your preferred Umrah or Hajj package. We facilitate booking, including flights and accommodations."
+      title: "Perjalanan Suci Anda",
+      desc: "Pilih pakej Umrah atau Haji yang anda inginkan. Kami uruskan tempahan termasuk penerbangan dan penginapan."
     },
     {
       icon: <BookOpen className="w-8 h-8 text-white" />,
       number: "3",
-      title: "Spiritual & Practical Readiness",
-      desc: "Receive visa processing assistance and access exclusive resources to prepare spiritually and practically.",
+      title: "Persediaan Rohani & Praktikal",
+      desc: "Terima bantuan pemprosesan visa dan akses kepada bahan eksklusif untuk persediaan rohani dan praktikal.",
       isHighlighted: true
     },
     {
       icon: <MapPin className="w-8 h-8 text-white" />,
       number: "4",
-      title: "Journey to the Holy Cities",
-      desc: "Embark on your travels. Enjoy seamless transfers and guided Ziyarat to holy sites in Mecca and Medina."
+      title: "Perjalanan ke Tanah Suci",
+      desc: "Mulakan perjalanan anda. Nikmati pemindahan yang lancar dan Ziarah berpandu ke lokasi suci di Makkah dan Madinah."
     },
     {
       icon: <Heart className="w-8 h-8 text-white" />,
       number: "5",
-      title: "Continuous Care & Reflection",
-      desc: "Experience 24/7 on-ground support and post-journey resources to enrich your reflection and memories."
+      title: "Penjagaan Berterusan & Penghayatan",
+      desc: "Alami sokongan 24/7 di lapangan serta sumber selepas perjalanan untuk memperkaya penghayatan dan kenangan anda."
     }
   ];
 
@@ -64,7 +64,7 @@ const Process: React.FC = () => {
             Your Sacred Journey, Simplified
           </h1>
           <p className="text-olive-800 text-sm md:text-base max-w-xl leading-relaxed">
-            Guiding you through every step of your spiritual pilgrimage with care and peace of mind.
+            Membimbing anda pada setiap langkah perjalanan ibadah dengan penuh perhatian dan ketenangan jiwa.
           </p>
         </div>
       </div>
@@ -75,7 +75,7 @@ const Process: React.FC = () => {
       {/* Process Steps Section */}
       <div className="py-16 px-4 md:px-8 lg:px-16 bg-sand-50">
         <h2 className="text-2xl md:text-4xl font-serif text-olive-900 text-center mb-16">
-          Our Process: From Inquiry to Reflection
+          Proses Kami: Dari Pertanyaan hingga Penghayatan
         </h2>
 
         {/* Steps Container */}
@@ -129,14 +129,14 @@ const Process: React.FC = () => {
 
                 {/* Step Title */}
                 <h3 className={`
-                  text-sm font-semibold mb-3 leading-tight px-2
+                  text-m font-semibold mb-3 leading-tight px-2
                   ${step.isHighlighted ? 'text-gold-600' : 'text-olive-800'}
                 `}>
                   {step.number}. {step.title}
                 </h3>
 
                 {/* Step Description */}
-                <p className="text-xs text-slate-600 leading-relaxed px-2 max-w-[220px]">
+                <p className="text-xm text-slate-600 leading-relaxed px-2 max-w-[220px]">
                   {step.desc}
                 </p>
               </div>
@@ -159,13 +159,13 @@ const Process: React.FC = () => {
         {/* Content */}
         <div className="relative z-10 text-center px-4 pt-8">
           <h2 className="text-2xl md:text-3xl font-serif text-white mb-8">
-            Ready to Begin Your Spiritual Path?
+            Sedia Memulakan Jalan Ibadah Anda?
           </h2>
           <a
             href="#contact"
             className="inline-block px-8 py-4 bg-gold-500 text-white font-medium tracking-wide hover:bg-gold-600 transition-all shadow-lg rounded-full"
           >
-            Start Your Spiritual Journey Today
+            Mulakan Perjalanan Suci Anda Hari Ini
           </a>
         </div>
       </div>
