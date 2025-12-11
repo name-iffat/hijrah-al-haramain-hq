@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     name: '',
     email: '',
     phone: '',
-    inquiryType: 'General Inquiry',
+    inquiryType: 'Pertanyaan Umum',
     message: ''
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -18,10 +18,27 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log(formData);
+
+    // Construct WhatsApp message with form data
+    const whatsappNumber = '6044594207';
+    let message = `*Pertanyaan Baru dari Website*\n\n`;
+    message += `*Nama:* ${formData.name}\n`;
+    message += `*Email:* ${formData.email}\n`;
+    if (formData.phone) {
+      message += `*Telefon:* ${formData.phone}\n`;
+    }
+    message += `*Jenis Pertanyaan:* ${formData.inquiryType}\n\n`;
+    if (formData.message) {
+      message += `*Mesej:*\n${formData.message}`;
+    }
+
+    // Open WhatsApp with pre-filled message
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank');
+
+    // Show success message and reset form
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 5000);
-    setFormData({ name: '', email: '', phone: '', inquiryType: 'General Inquiry', message: '' });
+    setFormData({ name: '', email: '', phone: '', inquiryType: 'Pertanyaan Umum', message: '' });
   };
 
   return (
