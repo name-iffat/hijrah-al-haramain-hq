@@ -76,11 +76,11 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="flex items-center gap-3 group">
-            <div className={`p-2 rounded-full border transition-all duration-300 ${isScrolled
+            <div className={` rounded-full border transition-all duration-300 ${isScrolled
               ? 'border-gold-500 text-gold-600'
               : 'border-white/30 text-white bg-black/10 backdrop-blur-sm'
               }`}>
-              <Moon className="w-5 h-5" fill="currentColor" />
+              <img src="/assets/logo/favicon_io/apple-touch-icon.png" alt="Hijrah Logo" className="w-10 h-10" />
             </div>
             <div className="flex flex-col">
               <span className={`font-serif font-bold text-xl tracking-wider leading-none transition-colors ${isScrolled ? 'text-olive-900' : 'text-white text-shadow'

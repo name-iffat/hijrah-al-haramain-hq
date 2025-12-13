@@ -3,6 +3,7 @@ import React, { useMemo, useState, useEffect } from 'react';
 import { Shield, Heart, Star, ArrowUpRight } from 'lucide-react';
 import SectionPattern from '../components/SectionPattern';
 import Masonry, { Item } from '../components/Masonry';
+import UmrahCourseSection from '../components/UmrahCourseSection';
 
 // @ts-ignore
 import v1 from '../assets/poster/vertical-1.jpg';
@@ -115,6 +116,8 @@ const Home: React.FC = () => {
           <span className="text-white/50">Scroll</span>
         </div>
       </section>
+      {/* Umrah Course Section */}
+      <UmrahCourseSection />
 
 
       {/* Intro / Values Section */}
@@ -193,6 +196,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+
 
       {/* Decorative Divider */}
       <div className="flex items-center justify-center py-4 bg-sand-50">
