@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
         className={`absolute inset-0 -z-10 transition-opacity duration-500 pointer-events-none overflow-hidden ${isScrolled ? 'opacity-100' : 'opacity-0'
           }`}
       >
-        <div className="absolute inset-0 bg-olive-50/95 backdrop-blur-md"></div>
+        <div className="absolute inset-0 bg-[#f4f7f5]/95 backdrop-blur-md"></div>
         <div className="absolute inset-0 bg-pattern-islamic opacity-[0.03]"></div>
       </div>
 
@@ -127,8 +127,7 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`md:hidden p-2 transition-colors ${isScrolled ? 'text-olive-900' : 'text-white'
-              }`}
+            className="md:hidden p-2.5 rounded-lg transition-all duration-300 bg-[#3A5A40] text-white hover:bg-[#2f4a33] shadow-md"
           >
             {isOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -137,7 +136,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`md:hidden fixed inset-0 bg-olive-900/98 backdrop-blur-xl z-50 transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`md:hidden fixed inset-0 bg-[#3A5A40] z-50 transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
         <div className="flex flex-col h-full relative">
